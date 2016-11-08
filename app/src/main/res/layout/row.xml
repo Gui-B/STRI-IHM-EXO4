@@ -22,7 +22,7 @@ android:padding="10dp"
     android:layout_toRightOf="@+id/img"
     android:layout_alignTop="@+id/img"
     android:textStyle="bold"
-    tools:text="Pseudo"
+    tools:text="artiste"
     />
 
 <TextView

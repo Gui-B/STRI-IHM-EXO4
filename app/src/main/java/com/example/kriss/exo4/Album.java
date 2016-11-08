@@ -5,22 +5,22 @@ package com.example.kriss.exo4;
  */
 
 public class Album {
-    private int color;
+    private int cover;
     private String artiste;
-    private String Album;
+    private String album;
 
-    public Album(int color, String artiste, String Album) {
-        this.color = color;
+    public Album(int cover, String artiste, String album) {
+        this.cover = cover;
         this.artiste = artiste;
-        this.Album = Album;
+        this.album = album;
     }
 
-    public int getColor() {
-        return color;
+    public int getCover() {
+        return cover;
     }
 
-    public void setColor(int color) {
-        this.color = color;
+    public void setCover(int cover) {
+        this.cover = cover;
     }
 
     public String getArtiste() {
@@ -32,10 +32,10 @@ public class Album {
     }
 
     public String getAlbum() {
-        return Album;
+        return album;
     }
 
     public void setAlbum(String album) {
-        this.Album = album;
+        this.album = album;
     }
 }

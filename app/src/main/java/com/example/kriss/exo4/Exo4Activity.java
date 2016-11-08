@@ -3,15 +3,14 @@ package com.example.kriss.exo4;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Exo4 extends AppCompatActivity {
+public class Exo4Activity extends AppCompatActivity {
 
-    ListView listView;
+    private ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,17 +20,17 @@ public class Exo4 extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.listView);
 
         List<Album> albums = genererAlbums();
-        AlbumAdapter adapter = new AlbumAdapter(Exo4.this, albums);
+        AlbumAdapter adapter = new AlbumAdapter(Exo4Activity.this, albums);
         listView.setAdapter(adapter);
     }
 
     private List<Album> genererAlbums(){
         List<Album> albums = new ArrayList<Album>();
-        albums.add(new Album(Color.BLACK, "Black Bomb A", "Speech of Freedom"));
-        albums.add(new Album(Color.BLUE, "Metallica", "Black"));
-        albums.add(new Album(Color.GREEN, "Nirvana", "Nevermind"));
-        albums.add(new Album(Color.RED, "Korn", "Follow the leader"));
-        albums.add(new Album(Color.GRAY, "Eths", "Teratologie"));
+        albums.add(new Album(R.drawable.speech_of_freedom, "Black Bomb A", "Speech of Freedom"));
+        albums.add(new Album(R.drawable.black_album, "Metallica", "Black"));
+        albums.add(new Album(R.drawable.nevermind, "Nirvana", "Nevermind"));
+        albums.add(new Album(R.drawable.follow_the_leader, "Korn", "Follow the leader"));
+        albums.add(new Album(R.drawable.teratologie, "Eths", "Teratologie"));
         return albums;
     }
 }

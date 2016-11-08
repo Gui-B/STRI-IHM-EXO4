@@ -38,7 +38,7 @@ public class AlbumAdapter  extends ArrayAdapter<Album> {
 
         viewHolder.artiste.setText(album.getArtiste());
         viewHolder.album.setText(album.getAlbum());
-        viewHolder.img.setImageDrawable(new ColorDrawable(album.getColor()));
+        viewHolder.img.setImageResource(album.getCover());
 
         return convertView;
     }
