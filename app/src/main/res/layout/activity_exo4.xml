@@ -4,7 +4,7 @@
     android:id="@+id/activity_exo5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.kriss.exo4.Exo5Activity">
+    tools:context="com.example.kriss.exo4.activity.Exo5Activity">
 
     <LinearLayout
         android:orientation="vertical"

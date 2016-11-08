@@ -1,4 +1,4 @@
-package com.example.kriss.exo4;
+package com.example.kriss.exo4.entity;
 
 /**
  * Created by kriss on 08/11/16.

@@ -1,5 +1,6 @@
-package com.example.kriss.exo4;
+package com.example.kriss.exo4.adapter;
 
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -11,4 +12,5 @@ public class AlbumViewHolder {
     public TextView artiste;
     public TextView album;
     public ImageView img;
+    public View rowLayout;
 }
