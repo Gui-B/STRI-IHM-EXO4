@@ -1,5 +1,6 @@
 package com.example.kriss.exo4;
 
+import android.app.Activity;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,7 +9,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Exo4Activity extends AppCompatActivity {
+public class Exo4Activity extends Activity {
 
     private ListView listView;
 
