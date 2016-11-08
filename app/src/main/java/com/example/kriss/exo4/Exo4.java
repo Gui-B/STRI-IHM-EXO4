@@ -16,7 +16,9 @@ public class Exo4 extends AppCompatActivity {
 
         listView = (ListView) findViewById(R.id.listView);
 
-        ArrayAdapter<String> adaptateur = new ArrayAdapter<String>()
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(Exo4.this,
+                android.R.layout.simple_list_item_1, artiste);
+        listView.setAdapter(adapter);
 
     }
 }
