@@ -1,15 +1,13 @@
 package com.example.kriss.exo4;
 
 import android.app.Activity;
-import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Exo4Activity extends Activity {
+public class Exo5Activity extends Activity {
 
     private ListView listView;
 
@@ -21,7 +19,7 @@ public class Exo4Activity extends Activity {
         listView = (ListView) findViewById(R.id.listView);
 
         List<Album> albums = genererAlbums();
-        AlbumAdapter adapter = new AlbumAdapter(Exo4Activity.this, albums);
+        AlbumAdapter adapter = new AlbumAdapter(Exo5Activity.this, albums);
         listView.setAdapter(adapter);
     }
 
